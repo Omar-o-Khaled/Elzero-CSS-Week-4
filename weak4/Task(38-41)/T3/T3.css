@@ -1,0 +1,85 @@
+*{
+    /* -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%; */
+    /* border-radius: 50%; */
+}
+
+.container{
+    text-transform: capitalize;
+    width: 550px;
+    position: relative;
+    left: 50%;
+    top: 150px;
+    margin-left: -275px;
+    font-family: sans-serif;
+
+}
+
+.container::before{
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: #29b6f6;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -1px;
+}
+.container::after{
+    content: "or";
+    color: white;
+    font-weight: bold;
+    background-color: #29b6f6;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: -17px;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.container .basic,
+.container .pro{
+    width: 250px;
+    height: 350px;
+    background-color: #eee;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+
+.container .basic p,
+.container .pro p{
+    
+    background: #29b6f6;
+    font-size: 30px;
+    width: 200px;
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    border-radius: 20px;
+
+}
+
+.container .basic div,
+.container .pro div{
+    background: #9e9e9e;
+    padding: 90px;
+    border-radius: 50%;
+    font-weight: 600; 
+    margin: 0 25px; 
+}
+.container .pro{
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}

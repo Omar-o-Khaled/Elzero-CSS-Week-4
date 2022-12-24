@@ -1,0 +1,32 @@
+p{
+    counter-increment: number;
+    margin: 35px auto;
+    width: 350px;
+    background: gainsboro;
+    font-size: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+p::before{
+    content: counter(number);
+    padding: 20px 25px;
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    font-family: sans-serif;
+}
+
+p::after{
+    content: "";
+    width: 5px;
+    height: 100%;
+    background: red;
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
